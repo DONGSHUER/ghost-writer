@@ -9,7 +9,7 @@ File: Framework CSS
 */
 
 html{overflow-y:scroll; overflow-x:hidden;}
-html, body{margin:0; padding:0; font-size:14px; line-height:1.6em;}
+html, body{margin:0; padding:0; font-size:15px; line-height:1.8em;}
 
 *, *::before, *::after{box-sizing:border-box;}
 
@@ -46,15 +46,17 @@ a{outline:none; text-decoration:none;}
 .fl_left, .imgl{float:left;}
 .fl_right, .imgr{float:right;}
 
-img{width:auto; max-width:100%; height:auto; margin:0; padding:0; border:none; line-height:normal; vertical-align:middle;}
+img{width:auto; max-width:100%; height:auto; margin:0; padding:0; border:0; line-height:normal; vertical-align:middle;}
+
 .imgl{margin:0 15px 10px 0; clear:left;}
 .imgr{margin:0 0 10px 15px; clear:right;}
 .imgover{display:inline-block; position:relative; max-width:100%;}
 .imgover::before, .imgover::after{display:block; position:absolute; content:""; text-align:center; opacity:0;}
 .imgover::before{top:0; right:0; bottom:0; left:0;}
-.imgover::after{top:50%; left:50%; width:50px; height:50px; line-height:50px; margin:-25px 0 0 -25px; content:"\f06e";/* fa-eye */ font-family:"Merriweather"; font-size:28px;}
+.imgover::after{top:50%; left:50%; width:50px; height:50px; line-height:50px; margin:-25px 0 0 -25px; content:"";/* fa-eye */ font-family:"Merriweather"; font-size:14px;}
 .imgover:hover::before, .imgover:hover::after{opacity:1;}
 
+.imgover img {width: 100%}
 
 /* Fonts
 --------------------------------------------------------------------------------------------------------------- */
@@ -73,8 +75,14 @@ label{margin-bottom:5px;}
 
 /* Generalise
 --------------------------------------------------------------------------------------------------------------- */
-h1, h2, h3, h4, h5, h6, .heading{display:block; width:150%; margin:0 0 20px 0; font-size:1.4rem; line-height:normal; font-weight:normal;}
+h3, h4, h5, h6 .heading{display:block; width:150%; margin:0 0 20px 0; font-size:1.4rem; line-height:normal; font-weight:normal;}
 .heading.nospace{margin:0;}
+
+h6.heading{margin-block-start: 0; margin-block-end: 0;}
+
+h2.heading{ display:block; width:100%; margin:0 0 20px 0; font-size:1.4rem; line-height:normal; font-weight:normal;}
+
+h1.heading{ display:block; width:100%; margin:0 0 20px 0; font-size:1.4rem; line-height:normal; font-weight:normal;}
 
 address{font-style:normal; font-weight:normal;}
 hr{display:block; width:100%; height:1px; border:solid; border-width:1px 0 0 0;}
@@ -98,15 +106,21 @@ address, article, aside, figcaption, figure, footer, header, main, nav, section{
 
 
 /* Grid
---------------------------------------------------------------------------------------------------------------- */
-.one_half, .one_third, .two_third, .one_quarter, .two_quarter, .three_quarter{display:inline-block; float:left; margin:0 0 0 3.06748466257669%; list-style:none;}
+---
+------------------------------------------------------------------------------------------------------------ */
+.one_half, .one_third, .two_third, .one_quarter, .two_quarter, .three_quarter{display:inline-block; float:left; margin:0 0 0 0; list-style:none;}
 
-.first{margin-left:0; clear:left;}
+one_half{margin: 0 20px 0 20px}
+
+.one_third { margin-left: 20px; margin-right: 20px }
+.group { margin: 0 -50px 0 -50px }
+
+.first{margin-left: 50px; clear:left;}
 
 .one_quarter{width:22.69938650306748%;}
 .one_third{width:31.28834355828221%;}
-.one_half, .two_quarter{width:48.46625766871166%;}
-.two_third{width:65.6441717791411%;}
+.one_half, .two_quarter{width:45.46625766871166%;}
+.two_third{width:55.6441717791411%;}
 .three_quarter{width:74.23312883435584%;}
 
 

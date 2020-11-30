@@ -61,10 +61,10 @@ File: Layout CSS
 .sectiontitle *{margin:0;}
 
 .excerpt{}
-.excerpt article{max-width:320px;}
+.excerpt article{max-width:280px;}
 .excerpt > article:last-child{margin-bottom:0;}/* Used when elements stack in smaller viewports */
 .excerpt .meta li{display:inline-block; font-size:.8rem;}
-.excerpt .meta li::after{margin-left:5px; content:"|";}
+.excerpt .meta li::after{margin-left:0px; content:"|";}
 .excerpt .meta li:last-child::after{margin:0; content:"";}
 
 .overview{margin-bottom:80px;}
@@ -285,7 +285,7 @@ input:focus, textarea:focus, *:required:focus{border-color:#04DEE0;}
 .row0, .row0 a{color:#FFFFFF;}
 .row1{color:#FFFFFF; background-color:rgba(0,0,0,.6);}
 .row2{color:#FFFFFF; background-color:#222222;}
-.row3{color:#7A7A7A; background-color:#FFFFFF;}
+.row3{color:#000000; background-color:#FFFFFF;}
 .row4{color:#7A7A7A; background-color:#F7F7F7;}
 .row5, .row5 a{color:#7A7A7A; background-color:#FFFFFF;}
 
@@ -409,7 +409,7 @@ table a, #comments a{background-color:inherit;}
 	.imgl, .imgr{display:inline-block; float:none; margin:0 0 10px 0;}
 	.fl_left, .fl_right{display:block; float:none;}
 	.group .group > *:last-child, .clear .clear > *:last-child, .clear .group > *:last-child, .group .clear > *:last-child{margin-bottom:0;}/* Experimental - Needs more testing in different situations, stops double margin when stacking */
-	.one_half, .one_third, .two_third, .one_quarter, .two_quarter, .three_quarter{display:block; float:none; width:auto; margin:0 0 30px 0; padding:0;}
+	.one_half, .one_third, .two_third, .one_quarter, .two_quarter, .three_quarter{display:block; float:none; width:100%; margin:0; padding:0;}
 
 	#topbar{padding-top:15px; text-align:center;}
 	#topbar > div:first-of-type ul{margin:0 0 15px 0;}
