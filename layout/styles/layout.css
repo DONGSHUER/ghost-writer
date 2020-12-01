@@ -80,7 +80,7 @@ File: Layout CSS
 .testimonials blockquote{margin-right:30px;; margin-bottom:30px; padding:20px;}
 .testimonials blockquote::before{top:10px; left:10px; font-size:32px; line-height:32px;}
 .testimonials blockquote::after{display:block; position:absolute; bottom:-15px; left:50%; margin-left:-15px; width:0; height:0; content:""; border:15px solid transparent; border-bottom:none;}
-.testimonials figure{text-align:left;}
+.testimonials figure{text-align:center;}
 .testimonials figure *{margin:0; line-height:1.4;}
 .testimonials figure img{margin:0;}
 .testimonials figcaption .heading{font-size:1.2rem; font-weight:700;}
