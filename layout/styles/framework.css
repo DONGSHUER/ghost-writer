@@ -34,7 +34,7 @@ html, body{margin:0; padding:0; font-size:15px; line-height:1.8em;}
 
 .btn{display:inline-block; padding:8px 18px 10px; text-transform:uppercase; text-align:center; border:1px solid;}
 
-blockquote{display:block; position:relative; width:100%; margin:0; padding:30px; line-height:1.4; z-index:1;}
+blockquote{display:block; position:relative; width:95%; margin:0; padding:30px; line-height:1.4; z-index:1;}
 blockquote::before{display:block; position:absolute; top:0; left:0; font-family:"Merriweather"; font-size:60px; line-height:60px; content:"\f10d"; z-index:-1;}
 
 .clear, .group{display:block;}
